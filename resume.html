@@ -1,0 +1,405 @@
+<html>
+<head>
+<meta name="vireport" content="width=device-width,initial-scale=1.0">
+<title>Resume</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'poppins', sans-serif;
+}
+body
+{
+	background:#14BEB2;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url("img1.jpg");
+}
+.container
+{
+	position:relative;
+	width:100%;
+	max-width:1000px;
+	min-height:1000px;
+	background: linear-gradient(to bottom, #000000,#195161,#009688);
+	margin:50px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow:0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_Side
+{
+	position:relative;
+	background: linear-gradient(to bottom, #000000,#195161,#009688);
+	padding:40px;
+	margin-right: 0;
+}
+.profileText
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBx
+{
+	position: relative;
+	width: 150px;
+	height: 200px;
+	border-radius:50%;
+	overflow:hidden;
+}
+.profileText .imgBx img
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+.profileText h2
+{
+	color: #fff;
+	font-size:1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align:center;
+	font-weight: 600;
+	line-height: 1.4em;
+}
+.profileText h2 span
+{
+	font-size:0.8em;
+	font-weight:300;
+}
+.contactInfo
+{
+	padding-top:40px;
+}
+.title
+{
+	color:#fff;
+	text-transform:uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom:20px;
+}
+
+.contactInfo ul
+{
+	position:relative;
+}
+.contactInfo ul li
+{
+	position:relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.contactInfo ul li .icon{
+	display: inline-block;
+	width:30px;
+	font-size:18px;
+	color:#03a9f4;
+}
+.contactInfo ul li span
+{
+	color:#fff;
+	font-weight:300;
+}
+.contactInfo.education li
+{
+	margin-bottom: 15px;
+}
+.contactInfo.education h5
+{
+	color:#14BEB2;
+	font-weight:500;
+	font-size:16px;
+	
+	
+}
+.contactInfo.education h4
+{
+	color:#fff;
+	font-weight:500;
+	font-size:20px;
+	padding-top:8px;
+	
+	
+	
+}
+.contactInfo.education h4
+{
+	color:#fff;
+	font-weight:300;
+	font-size:20px;
+	padding-top:8px;
+}
+.contactInfo.language .percent
+{
+	position:relative;
+	width:100%;
+	height:6px;
+	background:#081921;
+	display:block;
+	margin-top:5px;
+}
+.contactInfo.language .percent div
+{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	background:#14BEB2;
+}
+.add{
+	color:#14BEB2;
+	margin-top:80px;
+	margin-bottom:2px;
+	margin-left:2px;
+}
+
+.container .right_Side
+{
+	position:relative;
+	background: linear-gradient(to bottom,#009688,#195161,#009688);
+	padding:40px;
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	border-radius: 70px 2px 70px 2px;
+	box-shadow: 10px 15px 10px 15px rgba(28, 27, 27, 0.904);
+
+}
+.about
+{
+	margin-bottom:50px;
+}
+.about:last-child
+{
+	margin-bottom:0;
+}
+.title2
+{
+	color:#c6cecd;
+  text-decoration:underline;
+
+	text-transform:uppercase;
+	letter-spacing:1px;
+	margin-bottom:10px;
+	font-size:30px;
+}
+p
+{
+	color:#000000;
+	font-size:20px;
+	margin-bottom:25px;
+}
+
+.fieldset{
+
+ font-family: 'Averia Serif Libre';
+  margin-top:25px;
+border-style: double !important;
+  border-color: black;
+  
+
+}
+.table{
+	margin-top:50px;
+	letter-spacing:1px;
+	margin-bottom:40px;
+  color:#fff;
+	
+	
+}
+.interest .title2
+{
+	padding-top:50px;
+  color: #fff;
+
+}
+
+
+
+.interest ul{
+	margin-top:40px;
+	display:grid;
+
+	
+}
+.interest ul li{
+	list-style:none;
+	color:#161515;
+	font-weight:500;
+	margin:10px 0;
+}
+la
+{
+	font-size:5px;
+}
+right_Side{
+  color: #fff;
+}
+contactInfo language{
+  color: #fff;
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+<div class="container">
+<div class="left_Side">
+<div class="profileText">
+<div class="imgBx">
+<img src="img.jpg" width="100" height="100">
+</div>
+<h2>Khushi  Goda</h2>
+</div>
+
+<div class="contactInfo">
+<h3 class="title">Contact Info</h3>
+<ul>
+<li>
+<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></i></span>
+<span class="text">+91  937 0465 944</span>
+</li>
+
+<li>
+<span class="icon"><i class="fa fa-envelope-square" aria-hidden="true"></i></span>
+<span class="text">khushigoda2023@gmail.com</span>
+</li>
+<li>
+  <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></u></i></span>
+  <span class="text">github.com/khushi-2023</span>
+  </li>
+</ul>
+</div>
+
+
+<div class="contactInfo education">
+<h3 class="title">Education</h3>
+<ul>
+<li>
+<h5>2019-2020</h5>
+<h4>12<sup>th</sup>passed </h4>
+<h4>College Name:<br>R.P. Jr. College</h4>
+</li>
+</ul>
+</div>
+
+<div class="contactInfo language">
+<h3 class="title">Languages</h3>
+<ul>
+<li>
+<span class="text">English</span>
+<span class="percent">
+ <div style="width:75%;"></div>
+</span>
+</li>
+<li>
+<span class="text">Hindi</span>
+<span class="percent"><div style="width:90%;"></div></span>
+</li>
+</ul>
+
+ <table class="add"width = "100%">
+<tr>
+<td width ="50%"><b><i>Resume:-</i></b></td>
+<td width="50%"><marquee direction="left">khushi Goda</marquee></td>
+
+<tr>
+</table>
+</div>
+</div>
+
+
+
+<div class="right_Side">
+<div class="about">
+
+<h2 class="title2">Profile</h2>
+<p>Career Obijective To secure a challenging position in a reputable organization is expand my 
+learning,knowledge,and skills.</p>
+ 
+<div class="about">
+<table class="table">
+<tr>
+<th>Father's Name</th>
+<td>Mukesh Goda</td>
+</tr>
+<tr>
+<th>Date of Birth:</th>
+<td>18/09/2002</td>
+</tr>
+<tr>
+<th>Gender:</th>
+<td>Female</td>
+</tr>
+<tr>
+<th>Address:</th>
+<td>Vasai Road Mumbai</td>
+</tr>
+
+</table>
+<hr>
+<div class="la">
+<center><h6><b>The above information is true to the best of my knowledge!</b></h6></div></center>
+ 
+
+<div class="about interest">
+<h2 class="title2">Interest</h2>
+<ul>
+<li><i class="fa fa-book" aria-hidden="true"></i>Reading</li></ul>
+
+
+<div class="contactInfo language">
+  <h3 class="title" style="color: #fff;">Languages</h3>
+  <ul>
+  <li>
+  <span class="text"style="color: black;">HTML & CSS</span>
+  <span class="percent" style="background: #033B36;">
+   <div style="width:95%; background: #ebf6f5;"></div>
+  </span>
+  <span class="text"style="color: black;"> PHP</span>
+  <span class="percent" style="background: #033B36;">
+   <div style="width:75%; background: #ebf6f5;"></div>
+  </span>
+  <span class="text"style="color: black;"> JAVA</span>
+  <span class="percent" style="background: #033B36;">
+   <div style="width:55%; background: #ebf6f5;"></div>
+  </span>
+  <span class="text"style="color: black;">ANDROID DEVELOPMENT </span>
+  <span class="percent" style="background: #033B36;">
+   <div style="width:91%; background: #ebf6f5;"></div>
+  </span>
+  </li>
+  
+
+</div>
+</div>
+</body>
+</html>
